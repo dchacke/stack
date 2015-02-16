@@ -11,11 +11,7 @@ class Stack
   end
 
   def pop
-    if @items.size > 0
-      @items = @items.take(@items.size - 1)
-    else
-      raise 'No items in stack'
-    end
+    @items.pop
   end
 
   def size

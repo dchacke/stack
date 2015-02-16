@@ -35,10 +35,8 @@ RSpec.describe Stack do
       end
 
       context 'without any existing items' do
-        it 'raises an exception' do
-          expect {
-            stack.pop
-          }.to raise_error 'No items in stack'
+        it 'returns nil' do
+          expect(stack.pop).to be_nil
         end
       end
     end
